@@ -1,0 +1,125 @@
+body, html {
+    height: 100%;
+    font-family: 'Cutive Mono', monospace;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.caption {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    opacity: 0.8;
+    color: #fff;
+    padding: 18px;
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+    height:100%;
+}
+
+.bgEffects {
+    font-family: 'Elsie', cursive;
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+}
+
+#section1 {
+    height:100%;
+    background: url("/img/502260-2400x1350.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section2 {
+    height:50%;
+    background: url("/img/cover.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section3 {
+    height:50%;
+    background: url("/img/time3.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#section4 {
+    height:50%;
+    background: url("/img/DSC_0051.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.bgEffect article {
+    width: 70%;
+    text-align: center;
+    margin:0 auto;
+}
+
+article h1 {
+    font-size:40px;
+    color: #ffffff;
+}
+
+article p {
+    font-size:20px;
+    margin-top:25px;
+    color: #ffffff;
+}
+
+.welcome{
+    color: white;
+    font-size: 80px;
+    padding: 12% 16%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.detail{
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #777
+}
+
+a:hover{
+    text-decoration: none;
+    color: #AAA
+}
+
+.row-margin{
+    margin: 22px 0;
+}
+.center{
+    text-align: center;
+}
