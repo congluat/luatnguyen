@@ -532,7 +532,38 @@
 <div id="section5" class="bgEffect" data-speed="20">
 </div>
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Contact</h3>
+  <h3 style="text-align:center;">Get in touch</h3>
+    <div>
+      <form action="/mailer/sendMail" method="post" style="margin-top: 20px">
+        <div class="form-group row">
+          <label for="name" class="col-2 col-form-label">Your name</label>
+          <div class="col-10">
+            <input type="text" class="form-control" name="name" id="name" aria-describedby="emailHelp" required placeholder="Enter your full name">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="id" class="col-2 col-form-label">Your email</label>
+          <div class="col-10">
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="idhelp" minlength="3" required placeholder="Enter your email">
+            <small id="idhelp" class="form-text text-muted">abc@xyz.com</small>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exampleTextarea">Message</label>
+          <textarea class="form-control" required id="message" name="message" rows="3"></textarea>
+        </div>
+
+        <div class="form-group row">
+          <div class="offset-sm-4" ></div>
+          <div class="col-sm-4">
+            <button type="submit" class="btn btn-outline-success" style="margin-top: 10px;width: 100%">Send</button>
+          </div>
+          <div class="offset-sm-4" ></div>
+
+        </div>
+      </form>
+    </div>
 </div>
 
 <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"><\/script>')</script>

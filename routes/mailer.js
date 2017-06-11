@@ -4,8 +4,8 @@ const nodemailer = require('nodemailer');
 
 /* POST home page. */
 router.post('/sendMail', function(req, res, next) {
-    var body = req.body.Body
-
+    var body = req.body;
+    console.log(body);
 // create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
@@ -20,21 +20,21 @@ router.post('/sendMail', function(req, res, next) {
 // setup email data with unicode symbols
     let mailOptions = {
         from: '"Luat Nguyen Nodejs" <luatnodejs@gmail.com>', // sender address
-        to: 'Luat Nguyen <congluat27@gmail.com>', // list of receivers
-        subject: 'Hello ✔', // Subject line
-        text: 'Hello world ?', // plain text body
-        html: '<b>Hello world ?</b>' // html body
+        to: req.body.name + '<'+req.body.email+'>', // list of receivers
+        subject: 'Get in touch from + '+req.body.name, // Subject line
+        text: req.body.message, // plain text body
+        html: req.body.message // html body
     };
 // send mail with defined transport object
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            res.send(false);
+            //res.send(false);
             return console.log(error);
         }
-        res.send(true);
+        //res.send(true);
         console.log('Message %s sent: %s', info.messageId, info.response);
     });
-
+    res.render('success', { title: 'Message Sent' });
 });
 
 module.exports = router;
