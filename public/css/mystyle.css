@@ -106,12 +106,39 @@ article p {
     color: #ffffff;
 }
 
-.welcome{
+.welcome {
     color: white;
     font-size: 80px;
     font-family: 'Open Sans', sans-serif;
-    padding-left: 68%;
-    padding-top: 20%;
+}
+
+.career-object{
+    color: #777;
+    background-color:white;
+    opacity:0.9;
+    text-align:center;
+    width:100% ;
+    text-align: justify;
+}
+.timeline-wraper{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+@media screen and (min-width: 800px) {
+    .welcome {
+        padding-left: 68%;
+        padding-top: 20%;
+    }
+    .career-object{
+        padding:50px 80px;
+    }
+    .timeline-wraper{
+        padding:50px 80px;
+    }
 }
 
 .detail{
