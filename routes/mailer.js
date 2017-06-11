@@ -20,8 +20,8 @@ router.post('/sendMail', function(req, res, next) {
 // setup email data with unicode symbols
     let mailOptions = {
         from: '"Luat Nguyen Nodejs" <luatnodejs@gmail.com>', // sender address
-        to: req.body.name + '<'+req.body.email+'>', // list of receivers
-        subject: 'Get in touch from + '+req.body.name, // Subject line
+        to: 'Luat Nguyen' + '<congluat27@gmail.com>', // list of receivers
+        subject: 'Get in touch from  '+req.body.name+'-'+req.body.email, // Subject line
         text: req.body.message, // plain text body
         html: req.body.message // html body
     };
