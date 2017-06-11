@@ -46,7 +46,7 @@ html, body {
 
 #section1 {
     height:100%;
-    background: url("/img/502260-2400x1350.jpg") no-repeat center center fixed;
+    background: url("/img/time3.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,7 +64,7 @@ html, body {
 
 #section3 {
     height:50%;
-    background: url("/img/time3.jpg") no-repeat center center fixed;
+    background: url("/img/DSC_0051.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -73,12 +73,22 @@ html, body {
 
 #section4 {
     height:50%;
-    background: url("/img/DSC_0051.png") no-repeat center center fixed;
+    background: url("/img/502260-2400x1350.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
+
+#section5 {
+    height:50%;
+    background: url("/img/DSC_0580.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .bgEffect article {
     width: 70%;
     text-align: center;
@@ -99,8 +109,9 @@ article p {
 .welcome{
     color: white;
     font-size: 80px;
-    padding: 12% 16%;
     font-family: 'Open Sans', sans-serif;
+    padding-left: 68%;
+    padding-top: 20%;
 }
 
 .detail{
@@ -122,4 +133,16 @@ a:hover{
 }
 .center{
     text-align: center;
+}
+
+.cd-timeline-block h2{
+    font-weight: bolder;
+}
+
+.cd-timeline-block h5{
+    font-weight: bold;
+}
+
+.cd-timeline-block ul li{
+    list-style: square;
 }
