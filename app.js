@@ -8,6 +8,7 @@ var bodyParser = require('body-parser');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var mailer = require('./routes/mailer');
+var request = require('request');
 
 var app = express();
 
@@ -45,5 +46,26 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
+var minutes = 3, the_interval = minutes * 60 * 1000;
+setInterval(function() {
+  console.log("Sending wakeup request");
+  var listSites = ['https://l2dfactory-node-api.herokuapp.com/','https://luat-nodejs.herokuapp.com/','https://messenger-chatbot.herokuapp.com/'];
+  for(site of listSites){
+    callGetReq(site);
+  }
+  
+}, the_interval);
+
+callGetReq = (site)=>{
+ 
+  request(site, function (error, response, body) {
+  if (!error && response.statusCode == 200) {
+    console.log(`Success: ${site}`);
+  }else{
+    console.log(`Fail: ${site}`);
+  }
+  })
+}
 
 module.exports = app;
